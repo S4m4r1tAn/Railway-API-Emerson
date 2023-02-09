@@ -37,7 +37,7 @@ def inicializar_banco():
         db.drop_all()
         db.create_all()
         # Criar usuários adminstradores
-        autor = Autor(nome='S4m4r1t4N', email='s4m4r1t4n@email.com',
+        autor = Autor(nome='Emerson', email='emerson@email.com',
                     senha='123456', admin=True)
         db.session.add(autor)
         db.session.commit()
